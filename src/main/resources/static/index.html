@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.0.0/bundles/stomp.umd.min.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+
+<body>
+<noscript>
+    <h2 style="color:#ff0000">Seems Your browser doesn't support Javascript.Please enable javaScript and reload the
+        page</h2>
+</noscript>
+<div id="main-content" class="container" style=" height: 620px;">
+    <br>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+            <form class="form-inline">
+                <div class="col-8">
+                    <input type="text" id="name" style="width: 50%;" class="form-control" placeholder="Enter Your Name.." />
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect</button>
+                </div>
+            </form>
+            
+        </div>
+        <!-- <div class="col-md-5">
+            <form class="form-inline">
+                <div class="form-group">
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect</button>
+                </div>
+            </form>
+            
+        </div> -->
+    </div>
+    <br>
+    
+    <div class="row">
+        <div class="col-md-12" style="height: 500px; width: 100%; ">
+            <div class="scroll">
+            <table id="conversation" style=" width: 90%; " class="scroll">
+                <thead>
+                    <tr>
+                        <th id="t-heading">Welcome to chat room</th>
+                    </tr>
+                </thead>
+                <tbody id="greetings">
+                    <!-- <tr class="sender" ><td>hiii</td></tr> -->
+                    <!-- <tr style="color:white; font-size: 20px;" ><td>hiii</td></tr> -->
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-md-8">
+           <form class="form-inline">
+               <div class="col-10">
+                   <input type="text" id="message" style="width: 100%;" class="form-control" placeholder="Enter Your message" />
+
+               </div>
+           </form>
+           
+       </div>
+       <div class="col-md-4">
+               <div class="col-12">
+                   <button id="send" class="btn btn-default" type="submit">Send</button>
+               </div>
+       </div>
+   </div>
+</div>
+
+
+</body>
+</html>

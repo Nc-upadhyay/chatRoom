@@ -1,0 +1,22 @@
+#main-content{
+    background-color: red;
+}
+.sender{
+    color:yellow; 
+    font-size: 15px; 
+    text-align-last: right;
+}
+.receiver{
+    color:white; 
+    font-size: 15px;
+}
+ div.scroll {
+            margin: 4px, 4px;
+            padding: 4px;
+            background-color: green;
+            width: 500px;
+            height: 110px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: justify;
+        }
