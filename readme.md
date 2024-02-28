@@ -36,7 +36,7 @@ Requirement.
 <p>WebSocket is a communication protocol,provide communication in full-duplex mode over TCP. web socket distinct from <b>HTTP</b> http is a stateless protocol and http work on half-duplex mode.</p>
 <p>Once websocket connection stablished b/w a client and server, both can exchange the information until the connection is closed by any of them parties.</p>
 
-<h3>STOMP<h3>
+<h3>STOMP</h3>
 <p>STOMP stands for simple text oriented message protocol,is simple text oriented protocol design for working with message protocol. </p>
 
 
